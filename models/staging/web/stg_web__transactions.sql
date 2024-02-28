@@ -18,8 +18,8 @@ renamed as (
 clean_older as (
     select * from renamed 
 --    where transaction_date >= (current_date - 1)  过滤超过1天的数据
-    where transaction_date >= (to_date('2023-04-12','yyyy-MM-dd') - 1)  --测试用,假设跑数日期为2023-04-12
-    and transaction_date < to_date('2023-04-12','yyyy-MM-dd')
+--    where transaction_date >= (to_date('2023-04-12','yyyy-MM-dd') - 1)  --测试用,假设跑数日期为2023-04-12
+--    and transaction_date < to_date('2023-04-12','yyyy-MM-dd')
 )
 
 select * from clean_older
