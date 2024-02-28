@@ -13,4 +13,15 @@ integration_tests:
       keepalives_idle: 0 # default 0, indicating the system default. See below
       connect_timeout: 10 # default 10 seconds
       retries: 1  # default 1 retry on error/timeout when opening connections
-    
+
+env_databricks:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: dbt  #[ optional catalog name if you are using Unity Catalog ]
+      schema: dbt   #[ schema name ] # Required
+      host: localhost #[ yourorg.databrickshost.com ] # Required
+      http_path: / #[ /sql/your/http/path ] # Required
+      token: auth123 #[ dapiXXXXXXXXXXXXXXXXXXXXXXX ] # Required Personal Access Token (PAT) if using token-based authentication
+      threads: 1 #[ 1 or more ]  # Optional, default 1
