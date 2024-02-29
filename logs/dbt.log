@@ -1,0 +1,26 @@
+[0m20:12:11.593808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78fdb6450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78fe0a8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78fe09750>]}
+
+
+============================== 20:12:11.596432 | cf4ffaf9-5590-436c-8085-337b4d900563 ==============================
+[0m20:12:11.596432 [info ] [MainThread]: Running with dbt=1.7.8
+[0m20:12:11.596976 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/root/option1-customer360/logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:12:11.599321 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'customer360'
+[0m20:12:11.600043 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.045104284, "process_user_time": 1.680067, "process_kernel_time": 0.083903, "process_mem_max_rss": "89228", "process_in_blocks": "12064", "process_out_blocks": "8", "command_success": false}
+[0m20:12:11.600657 [debug] [MainThread]: Command `dbt run` failed at 20:12:11.600528 after 0.05 seconds
+[0m20:12:11.601044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78fdbe750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78fdbdf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7942ee190>]}
+[0m20:12:11.601401 [debug] [MainThread]: Flushing usage events
+[0m23:47:55.219811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe49ec310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe49edf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe4c1e410>]}
+
+
+============================== 23:47:55.222236 | 9f68cd23-6bc4-40ee-997c-32fa3777249c ==============================
+[0m23:47:55.222236 [info ] [MainThread]: Running with dbt=1.7.8
+[0m23:47:55.222735 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/root/option1-customer360/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:47:55.225064 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'customer360'
+[0m23:47:55.225775 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.042229872, "process_user_time": 1.640422, "process_kernel_time": 0.081921, "process_mem_max_rss": "97068", "process_in_blocks": "6912", "process_out_blocks": "8", "command_success": false}
+[0m23:47:55.226246 [debug] [MainThread]: Command `dbt test` failed at 23:47:55.226120 after 0.04 seconds
+[0m23:47:55.226648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe4fb21d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe5130f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fabe4c4ae50>]}
+[0m23:47:55.226986 [debug] [MainThread]: Flushing usage events

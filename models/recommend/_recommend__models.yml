@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: top3_hot_categorys
+    config:
+      materialized: view
+    columns:
+      - name: category
+        tests:
+          - not_null
+          - unique
